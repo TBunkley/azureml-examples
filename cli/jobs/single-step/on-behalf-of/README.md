@@ -11,6 +11,9 @@ description: An official sample showcasing use of on-behalf-of feature in AzureM
 # AzureML - On Behalf of Feature
 AzureML On Behalf of (OBO) is a powerful feature which allows AzureML users to use their AAD Identity within the training script of a remote Job (a job that runs on a remote compute). 
 
+## Known limitations
+AzureML On Behalf of (OBO) is only supported in AzureML Compute. It will not work in submitted Pipeline Jobs [Discussion](https://github.com/Azure/azure-sdk-for-python/issues/30104#issuecomment-2688284324)
+
 ## Why should you use it ?
 
 AzureML makes your AAD identity available inside training script. Any resource you can access when running code on your machine can be accessed from the training script running on a remote compute.
